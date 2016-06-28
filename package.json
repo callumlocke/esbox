@@ -75,7 +75,7 @@
     "yosay": "^1.1.1"
   },
   "devDependencies": {
-    "ava": "~0.13.0",
+    "ava": "~0.15.1",
     "babel-cli": "^6.8.0",
     "babel-eslint": "^6.0.4",
     "eslint": "~2.10.1",
