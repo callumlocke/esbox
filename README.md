@@ -1,4 +1,4 @@
-# 📦 esbox
+# 📦 ESBox
 
 [![NPM version][npm-image]][npm-url] [![Linux Build Status][travis-image]][travis-url] [![Windows Build Status][appveyor-image]][appveyor-url] [![Dependency Status][depstat-image]][depstat-url]
 
@@ -10,7 +10,7 @@ It automatically compiles and re-runs your script every time you save. Think  of
 
 ![demo-gif]
 
-As well as for experimenting, esbox may be useful in situations like workshops and screencasts – it makes it easy to do live code demos in ES2016 and beyond, without getting bogged down in build systems.
+As well as for experimenting, ESBox may be useful in situations like workshops and screencasts – it makes it easy to do live code demos in ES2016 and beyond, without getting bogged down in build systems.
 
 ## Install
 
@@ -26,7 +26,7 @@ To run `script.js` in a box:
 > esbox script.js
 ```
 
-Every time you save the file, esbox clears the terminal display and runs your script again. Any uncaught errors get pretty-printed for easy debugging.
+Every time you save the file, ESBox clears the terminal display and runs your script again. Any uncaught errors get pretty-printed for easy debugging.
 
 For more options, see `esbox --help`.
 
@@ -36,13 +36,13 @@ You can use any proposed ECMAScript features that Babel supports ([stage-0](http
 
 ## Magic imports
 
-For a number of popular libraries, you can just `import` them without the need to install them first.
+You can `import` a number of popular npm packages without needing to install them first.
 
-This includes lodash, bluebird, chalk, chai, express, request – and anything else listed under `dependencies` in esbox's own [package.json](./package.json).
+This includes lodash, bluebird, chalk, chai, express, request – and anything else listed under `dependencies` in [ESBox's own package.json](./package.json).
 
-This is made possible by rewiring `require()` to use esbox's own node_modules folder as an extra possible module source. (Your own locally installed modules still take precedence if found.)
+This is made possible by rewiring `require()` to use ESBox's own node_modules folder as an extra possible module source. (Locally installed modules relative to your script still take precedence if found.)
 
-For example, a script like this just works in esbox:
+For example, a script like this _just works_ in ESBox:
 
 ```js
 import cheerio from 'cheerio';
@@ -63,24 +63,21 @@ import { cyan } from 'chalk';
 })();
 ```
 
-## Using custom .babelrc files
+## Advanced: custom Babel config
 
-You may decided to use a custom babelrc file to configure babel in esbox. There are two methods to accomplush this.
+By default, ESBox will use a Babel config that makes all stage-0+ features work. But ideally you could also bring your own config. Currently, Babel has a [bug](https://phabricator.babeljs.io/T7098) that means it won't respect `.babelrc` files. Until that's fixed, you can instruct ESBox to use a `.babelrc` file located next to your script, like this:
 
-You may have esbox attempt to located the babelrc file in the same directory as the file that you're executing. This method used is the same method as Babel. 
-
-```
-esbox --babelrc -- script.js
+```sh
+> esbox script.js --babelrc
 ```
 
-The second method of using a custom babelrc is to point esbox directly to the path which contains the file.
+Or you can specify a directory to look for a `.babelrc` file in, like this:
 
+```sh
+> esbox script.js --babelrc /path/to/dir
 ```
-esbox --babelrc /path/to/babelrc -- script.js
-```
 
-Using this method, relative paths are mapped in relation to the current working directory (cwd).
-
+> This feature is a stopgap to work around a Babel issue. It might only affect your entry file. It will probably be removed in future and `.babelrc` files will just work.
 
 
 ---
