@@ -50,6 +50,7 @@
     "markdown-it": "^7.0.0",
     "minimatch": "^3.0.2",
     "minimist": "^1.2.0",
+    "mobx": "^2.3.3",
     "moment": "^2.13.0",
     "opn": "^4.0.2",
     "path-exists": "^3.0.0",
