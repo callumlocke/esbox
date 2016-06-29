@@ -98,7 +98,7 @@
     "build:watch": "rimraf dist && babel src --out-dir dist --watch --source-maps",
     "lint": "eslint .",
     "prepublish": "npm run build",
-    "test": "npm run lint && ava",
+    "test": "npm run lint && npm run build && ava",
     "test:watch": "ava --watch"
   }
 }
