@@ -33,11 +33,13 @@ const help = `
     ${grey('>')} esbox ${grey('FILENAME')}
 
   ${brown('Options')}
-    --cwd=${grey('DIRECTORY')}   run in a different directory
-    --no-watch        only run your script once
-    --no-clear        disable clearing the display before each run
-    --version         show esbox version
-    --poll            poll file system when watching files`;
+    --cwd=${grey('DIRECTORY')}     run in a different directory
+    --no-watch          only run your script once
+    --no-clear          disable clearing the display before each run
+    --version           show esbox version
+    --poll              poll file system when watching files
+    --babelrc           look for a custom babelrc in FILENAME's dir
+    --babelrc=${grey('DIRECTORY')} use an explicit, custom babelrc`;
 
 // get input from command line
 const { _: input, ...flags } = minimist(process.argv.slice(2), {
@@ -48,8 +50,9 @@ const { _: input, ...flags } = minimist(process.argv.slice(2), {
     help: false,
     version: false,
     poll: false,
+    babelrc: false,
   },
-  string: ['cwd'],
+  string: ['cwd', 'babelrc'],
   boolean: ['clear', 'watch', 'help', 'version', 'poll'],
   alias: {
     v: 'version',
@@ -70,7 +73,7 @@ if (flags.help || input.length !== 1) {
 }
 
 // unpack flags
-const { clear, watch } = flags;
+const { clear, watch, babelrc } = flags;
 const cwd = flags.cwd
   ? path.resolve(flags.cwd)
   : process.cwd();
@@ -108,6 +111,7 @@ const run = (() => {
       runner,
       '--file', userScript,
       '--clear', clear,
+      '--babelrc', babelrc,
     ], { cwd, stdio: 'inherit' });
 
     childProcess.on('close', code => {

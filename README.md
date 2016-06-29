@@ -63,6 +63,26 @@ import { cyan } from 'chalk';
 })();
 ```
 
+## Using custom .babelrc files
+
+You may decided to use a custom babelrc file to configure babel in esbox. There are two methods to accomplush this.
+
+You may have esbox attempt to located the babelrc file in the same directory as the file that you're executing. This method used is the same method as Babel. 
+
+```
+esbox --babelrc -- script.js
+```
+
+The second method of using a custom babelrc is to point esbox directly to the path which contains the file.
+
+```
+esbox --babelrc /path/to/babelrc -- script.js
+```
+
+Using this method, relative paths are mapped in relation to the current working directory (cwd).
+
+
+
 ---
 
 ## License
