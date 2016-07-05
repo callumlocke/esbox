@@ -1,7 +1,7 @@
 {
   "name": "esbox",
   "description": "ES.next in a box",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "ava": {
     "files": "dist/test/**/*.test.js",
     "source": [
