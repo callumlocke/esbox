@@ -64,7 +64,7 @@
     "resolve-from": "^2.0.0",
     "sander": "^0.5.1",
     "sane": "^1.4.0",
-    "semver": "^5.2.0",
+    "semver": "^5.3.0",
     "sinon": "^1.17.4",
     "socket.io": "^1.4.8",
     "stack-trace": "0.0.9",
