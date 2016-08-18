@@ -2,8 +2,9 @@ root: true
 parser: babel-eslint
 extends: airbnb/base
 rules:
-  brace-style: [2, stroustrup, {allowSingleLine: false}]
+  brace-style: [2, stroustrup, { allowSingleLine: false }]
   no-console: 0
   prefer-template: 0
   global-require: 0
   no-underscore-dangle: 0
+  import/no-extraneous-dependencies: [2, { devDependencies: true }]

@@ -1,7 +1,7 @@
 import execa from 'execa';
 import path from 'path';
-import pkg from '../../package.json';
 import test from 'ava';
+import pkg from '../../package.json';
 
 const cli = path.resolve(__dirname, '..', 'lib', 'cli.js');
 const fixture = path.resolve(__dirname, '..', '..', 'fixture');
