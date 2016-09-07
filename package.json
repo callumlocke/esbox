@@ -45,7 +45,7 @@
     "is-absolute": "^0.2.5",
     "isomorphic-fetch": "^2.2.1",
     "jade": "^1.11.0",
-    "koa": "^1.2.0",
+    "koa": "^1.2.3",
     "lodash": "^4.13.1",
     "markdown-it": "^7.0.0",
     "minimatch": "^3.0.2",
