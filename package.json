@@ -38,7 +38,7 @@
     "express": "^4.14.0",
     "figures": "^1.7.0",
     "find-up": "^1.1.2",
-    "glob": "^7.0.5",
+    "glob": "^7.1.0",
     "gulp": "^3.9.1",
     "handlebars": "^4.0.5",
     "immutable": "^3.8.1",
