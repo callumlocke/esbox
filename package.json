@@ -42,7 +42,7 @@
     "gulp": "^3.9.1",
     "handlebars": "^4.0.5",
     "immutable": "^3.8.1",
-    "is-absolute": "^0.2.5",
+    "is-absolute": "^0.2.6",
     "isomorphic-fetch": "^2.2.1",
     "jade": "^1.11.0",
     "koa": "^1.2.0",
