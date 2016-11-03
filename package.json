@@ -47,7 +47,7 @@
     "jade": "^1.11.0",
     "koa": "^1.2.0",
     "lodash": "^4.13.1",
-    "markdown-it": "^7.0.0",
+    "markdown-it": "^8.1.0",
     "minimatch": "^3.0.2",
     "minimist": "^1.2.0",
     "mobx": "^2.3.4",
