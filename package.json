@@ -62,7 +62,7 @@
     "redux-thunk": "^2.1.0",
     "request": "^2.72.0",
     "resolve-from": "^2.0.0",
-    "sander": "^0.5.1",
+    "sander": "^0.6.0",
     "sane": "^1.4.0",
     "semver": "^5.2.0",
     "sinon": "^1.17.4",
