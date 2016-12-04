@@ -71,7 +71,7 @@
     "subdir": "0.0.3",
     "through2": "^2.0.1",
     "underscore": "^1.8.3",
-    "update-notifier": "^1.0.2",
+    "update-notifier": "^1.0.3",
     "webpack": "^1.13.1",
     "yosay": "^1.2.0"
   },
