@@ -76,7 +76,7 @@
     "yosay": "^1.2.0"
   },
   "devDependencies": {
-    "ava": "^0.15.2",
+    "ava": "^0.18.2",
     "babel-cli": "^6.10.1",
     "babel-eslint": "^6.1.0",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
