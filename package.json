@@ -65,7 +65,7 @@
     "sander": "^0.5.1",
     "sane": "^1.4.0",
     "semver": "^5.2.0",
-    "sinon": "^1.17.4",
+    "sinon": "^2.1.0",
     "socket.io": "^1.4.8",
     "stack-trace": "0.0.9",
     "subdir": "0.0.3",
