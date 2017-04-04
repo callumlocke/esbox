@@ -55,7 +55,7 @@
     "opn": "^4.0.2",
     "path-exists": "^3.0.0",
     "pretty-hrtime": "^1.0.2",
-    "progress": "^1.1.8",
+    "progress": "^2.0.0",
     "react": "^15.2.0",
     "react-dom": "^15.2.0",
     "redux": "^3.5.2",
