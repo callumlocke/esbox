@@ -1,3 +1,7 @@
+> # DEPRECATED – try [RunJS](https://runjs.app/) for a better, modern alternative
+
+---
+
 # 📦 ESBox
 
 [![NPM version][npm-image]][npm-url] [![Linux Build Status][travis-image]][travis-url] [![Windows Build Status][appveyor-image]][appveyor-url] [![Dependency Status][depstat-image]][depstat-url]
@@ -6,7 +10,7 @@
 
 Zero-config REPL for experimenting with next-generation JavaScript.
 
-It automatically compiles and re-runs your script every time you save. Think  of it as a JSBin-like setup for your local editor and terminal – with full access to Node APIs and modules.
+It automatically compiles and re-runs your script every time you save. Think of it as a JSBin-like setup for your local editor and terminal – with full access to Node APIs and modules.
 
 ![demo-gif]
 
