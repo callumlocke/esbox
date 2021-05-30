@@ -13,7 +13,7 @@
     "esbox": "dist/lib/cli.js"
   },
   "dependencies": {
-    "ansi-escapes": "^1.4.0",
+    "ansi-escapes": "^2.0.0",
     "async": "^2.0.0-rc.6",
     "babel-polyfill": "^6.9.1",
     "babel-preset-es2015": "^6.9.0",
