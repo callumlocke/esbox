@@ -86,7 +86,7 @@
     "eslint-plugin-import": "^1.10.2",
     "eslint-plugin-jsx-a11y": "^1.5.3",
     "eslint-plugin-react": "^5.2.2",
-    "rimraf": "^2.5.3"
+    "rimraf": "^2.6.0"
   },
   "engines": {
     "node": ">=0.12"
