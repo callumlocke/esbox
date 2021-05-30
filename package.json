@@ -51,7 +51,7 @@
     "minimatch": "^3.0.2",
     "minimist": "^1.2.0",
     "mobx": "^2.3.4",
-    "moment": "^2.14.1",
+    "moment": "^2.18.1",
     "opn": "^4.0.2",
     "path-exists": "^3.0.0",
     "pretty-hrtime": "^1.0.2",
