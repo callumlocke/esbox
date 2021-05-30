@@ -72,7 +72,7 @@
     "through2": "^2.0.1",
     "underscore": "^1.8.3",
     "update-notifier": "^1.0.2",
-    "webpack": "^1.13.1",
+    "webpack": "^2.4.0",
     "yosay": "^1.2.0"
   },
   "devDependencies": {
