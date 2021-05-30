@@ -67,7 +67,7 @@
     "semver": "^5.2.0",
     "sinon": "^1.17.4",
     "socket.io": "^1.4.8",
-    "stack-trace": "0.0.9",
+    "stack-trace": "0.0.10",
     "subdir": "0.0.3",
     "through2": "^2.0.1",
     "underscore": "^1.8.3",
