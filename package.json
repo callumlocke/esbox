@@ -61,7 +61,7 @@
     "redux": "^3.5.2",
     "redux-thunk": "^2.1.0",
     "request": "^2.72.0",
-    "resolve-from": "^2.0.0",
+    "resolve-from": "^3.0.0",
     "sander": "^0.5.1",
     "sane": "^1.4.0",
     "semver": "^5.2.0",
